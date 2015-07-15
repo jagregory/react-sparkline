@@ -12,7 +12,11 @@ module.exports = React.createClass
       interpolate: 'basis'
       circleDiameter: 1.5
       data: [1,23,5,5,23,0,0,0,4,32,3,12,3,1,24,1,5,5,24,23] # Some semi-random data.
+      preserveAspectRatio: 'xMidYMid meet'
     }
+  
+  getViewBox: ->
+    "0 0 #{@props.width} #{@props.height}"
 
   componentDidMount: ->
     @renderSparkline()
@@ -74,6 +78,8 @@ module.exports = React.createClass
       .append('svg')
       .attr('width', @props.width)
       .attr('height', @props.height)
+      .attr('viewBox', @getViewBox())
+      .attr('preserveAspectRatio', @props.preserveAspectRatio)
       .append('g')
 
     svg.append('path')
