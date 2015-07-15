@@ -71,7 +71,9 @@ module.exports = React.createClass
         strokeColor='green'
         strokeWidth='5px'
         interpolate='none'
-        circleDiameter=10 />
+        circleDiameter=10
+        viewBox="0 0 200 40"
+        preserveAspectRatio="xMidYMid meet" />
         """}
       </code></pre>
       <Sparkline
@@ -80,7 +82,9 @@ module.exports = React.createClass
         strokeColor='green'
         strokeWidth='5px'
         interpolate='none'
-        circleDiameter=10 />
+        circleDiameter=10
+        viewBox="0 0 200 40"
+        preserveAspectRatio="xMidYMid meet" />
       <br />
 
       <h2>Updating data</h2>
