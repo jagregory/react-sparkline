@@ -72,7 +72,6 @@ module.exports = React.createClass
         strokeWidth='5px'
         interpolate='none'
         circleDiameter=10
-        viewBox="0 0 200 40"
         preserveAspectRatio="xMidYMid meet" />
         """}
       </code></pre>
